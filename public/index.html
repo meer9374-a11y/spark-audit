@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SparkAudit — The Unfair Texting Advantage for Average Guys</title>
+  <meta name="description" content="Find out why she stopped replying in 10 seconds. Free dating bio & text psychology audit proving women reply to wit, emotional tension, and mystery — not just model looks." />
+  <meta property="og:title" content="SparkAudit — It's Not Your Looks. It's Your Texting." />
+  <meta property="og:description" content="Paste your dating bio or a dead chat. Get your Reply Probability Score, 3 fixable mistakes, and high-intrigue rewrites that spark instant curiosity." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://gumroad.com/js/gumroad.js" defer></script>
+</head>
+<body class="min-h-screen antialiased selection:bg-amber-500/30 selection:text-amber-100">
+
+  <!-- Top Bar -->
+  <header class="border-b border-slate-800/80 bg-slate-950/60 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-4xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-slate-950 font-black text-sm shadow-lg shadow-amber-500/20">
+          SA
+        </div>
+        <div>
+          <span class="font-bold text-white tracking-tight text-lg">SparkAudit</span>
+          <span class="hidden sm:inline-block ml-2 text-xs font-medium px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">
+            Free Instant Diagnostic
+          </span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <span id="unlockedBadge" class="hidden text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+          ✓ Lifetime Unlock Active
+        </span>
+        <a href="#analyzer" class="text-xs sm:text-sm font-semibold text-amber-300 hover:text-amber-200 transition">
+          Audit My Text →
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 pt-10 pb-20">
+
+    <!-- Hero -->
+    <section class="text-center max-w-2xl mx-auto mb-10">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/70 text-xs font-medium text-slate-300 mb-5">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        The Unfair Texting Advantage for Average Guys
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
+        Not Getting Replies?<br />
+        <span class="bg-gradient-to-r from-amber-300 via-orange-400 to-amber-200 bg-clip-text text-transparent">
+          It’s Not Your Looks. It’s Your Curiosity Gap.
+        </span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
+        Women on Tinder, Bumble, and Hinge don’t ignore average guys because of height or jawline — they tune out <strong class="text-white">safe, interview-style bios and texts</strong> that spark zero emotional tension. Paste yours below for a 10-second psychology audit.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs sm:text-sm text-slate-400">
+        <span>✓ 100% Private &amp; Anonymous</span>
+        <span>✓ Works for Tinder, Hinge &amp; Bumble</span>
+        <span>✓ Zero Model Looks Required</span>
+      </div>
+    </section>
+
+    <!-- Analyzer Card -->
+    <section id="analyzer" class="glass-panel rounded-2xl p-5 sm:p-7 shadow-2xl mb-10">
+      <!-- Mode Toggle -->
+      <div class="grid grid-cols-2 gap-3 mb-5">
+        <button id="tabChat" type="button" class="tab-active border rounded-xl py-3 px-4 text-left transition cursor-pointer">
+          <div class="text-sm font-bold">💬 Dead Chat Rescue</div>
+          <div class="text-xs text-slate-400 mt-0.5">She stopped replying or went dry</div>
+        </button>
+        <button id="tabBio" type="button" class="border border-slate-700/70 bg-slate-900/50 text-slate-300 hover:border-slate-500 rounded-xl py-3 px-4 text-left transition cursor-pointer">
+          <div class="text-sm font-bold">📱 Dating Bio Audit</div>
+          <div class="text-xs text-slate-400 mt-0.5">Tinder, Hinge, or Bumble profile</div>
+        </button>
+      </div>
+
+      <!-- Quick Sample Chips -->
+      <div class="flex flex-wrap items-center gap-2 mb-3 text-xs">
+        <span class="text-slate-400">Try a real example:</span>
+        <button id="sampleChatBtn" type="button" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition cursor-pointer">
+          “How was your weekend?” Ghosted Chat
+        </button>
+        <button id="sampleBioBtn" type="button" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition cursor-pointer">
+          “Love to travel &amp; gym” Cliché Bio
+        </button>
+      </div>
+
+      <!-- Input Textarea -->
+      <div class="mb-4">
+        <label for="userInput" id="inputLabel" class="block text-sm font-semibold text-slate-200 mb-2">
+          Paste the last 2–4 messages where she stopped replying:
+        </label>
+        <textarea
+          id="userInput"
+          rows="5"
+          maxlength="2000"
+          class="w-full rounded-xl bg-slate-950/90 border border-slate-700/80 focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 outline-none p-4 text-sm sm:text-base text-slate-100 placeholder-slate-500 transition"
+          placeholder="Example:&#10;Me: Hey! How was your weekend?&#10;Her: Pretty good just relaxed&#10;Me: Nice haha what do you do for work?&#10;(Left on read for 2 days)"
+        ></textarea>
+        <div class="flex items-center justify-between mt-1.5 text-xs text-slate-500">
+          <span>Tip: Include her last message if you have it for sharper reply calibration.</span>
+          <span id="charCount">0 / 2000</span>
+        </div>
+      </div>
+
+      <button
+        id="analyzeBtn"
+        type="button"
+        class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-slate-950 font-extrabold text-base sm:text-lg tracking-tight transition cta-glow cursor-pointer flex items-center justify-center gap-2"
+      >
+        <span id="analyzeBtnText">Run Free Reply-Probability Audit</span>
+        <span id="analyzeSpinner" class="hidden w-5 h-5 border-2 border-slate-950 border-t-transparent rounded-full animate-spin"></span>
+      </button>
+
+      <p id="errorBox" class="hidden mt-3 text-sm text-rose-400 bg-rose-950/40 border border-rose-500/30 rounded-lg px-3.5 py-2.5"></p>
+    </section>
+
+    <!-- Results Container -->
+    <section id="resultsSection" class="hidden space-y-6 fade-in-up">
+
+      <!-- Free Diagnostic Card -->
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 border-amber-500/30">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6 pb-6 border-b border-slate-800">
+          <!-- Score Gauge -->
+          <div class="relative w-28 h-28 flex-shrink-0 mx-auto sm:mx-0">
+            <svg class="w-28 h-28 -rotate-90" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="42" stroke="#1e293b" stroke-width="10" fill="none" />
+              <circle id="scoreCircle" class="score-ring" cx="50" cy="50" r="42" stroke="#f59e0b" stroke-width="10" stroke-linecap="round" fill="none" stroke-dasharray="263.89" stroke-dashoffset="263.89" />
+            </svg>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+              <span id="scoreValue" class="text-2xl font-black text-white">0%</span>
+              <span class="text-[10px] uppercase tracking-wider text-slate-400 font-semibold">Reply Odds</span>
+            </div>
+          </div>
+
+          <div class="flex-1 text-center sm:text-left">
+            <div id="verdictBadge" class="inline-block text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-amber-500/15 text-amber-300 border border-amber-500/30 mb-2">
+              Free Psychology Diagnosis
+            </div>
+            <h2 id="diagnosisHeadline" class="text-xl sm:text-2xl font-extrabold text-white leading-snug mb-2">
+              ⚠️ REPLY PROBABILITY: 22% — Not a Looks Issue
+            </h2>
+            <p id="hopeSummary" class="text-sm sm:text-base text-slate-300 leading-relaxed"></p>
+          </div>
+        </div>
+
+        <!-- 3 Specific Fixable Mistakes -->
+        <div class="mt-6">
+          <h3 class="text-sm font-bold uppercase tracking-wider text-amber-300 mb-3">
+            3 Specific, Fixable Mistakes Killing Her Curiosity
+          </h3>
+          <div id="mistakesList" class="space-y-3"></div>
+        </div>
+
+        <!-- Brotherhood Viral Share Loop -->
+        <div class="mt-7 p-4 sm:p-5 rounded-xl bg-slate-950/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <div class="text-sm font-bold text-white flex items-center gap-2">
+              <span>🔓 Bonus Freebie: Unlock 1 High-Response Opener</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1">
+              Share your score with the brotherhood on X to instantly reveal 1 tailored curiosity-spark opener free.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2.5 w-full sm:w-auto">
+            <button id="shareScoreBtn" type="button" class="flex-1 sm:flex-none px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold border border-slate-600 transition cursor-pointer">
+              𝕏 Share My Score
+            </button>
+            <button id="shareUnlockOpenerBtn" type="button" class="flex-1 sm:flex-none px-4 py-2.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 text-xs font-bold border border-emerald-500/40 transition cursor-pointer">
+              Share on 𝕏 → Unlock 1 Opener Free
+            </button>
+          </div>
+        </div>
+
+        <!-- Free Bonus Opener (Revealed after X share) -->
+        <div id="freeOpenerBox" class="hidden mt-4 p-4 rounded-xl bg-emerald-950/35 border border-emerald-500/40 fade-in-up">
+          <div class="flex items-center justify-between mb-1.5">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-300">
+              ✓ Unlocked Free High-Response Opener
+            </span>
+            <button id="copyFreeOpenerBtn" type="button" class="text-xs font-semibold text-emerald-200 hover:text-white cursor-pointer">
+              Copy Text
+            </button>
+          </div>
+          <p id="freeOpenerText" class="text-sm sm:text-base font-medium text-white"></p>
+          <p id="freeOpenerWhy" class="text-xs text-emerald-200/80 mt-1.5"></p>
+        </div>
+      </div>
+
+      <!-- Hope-Driven Blurred Paywall ($19 Gumroad) -->
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 border-amber-500/40 relative overflow-hidden">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">
+              Tailored To Your Exact Input
+            </span>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-0.5">
+              High-Intrigue Profile Overhaul &amp; 5 Plug-and-Play Replies That Spark Instant Curiosity
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-400 mt-1">
+              Zero Model Looks Required — engineered to trigger emotional tension, playful wit, and an easy reply hook.
+            </p>
+          </div>
+          <span id="paywallStatusPill" class="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">
+            🔒 Locked ($19 One-Time)
+          </span>
+        </div>
+
+        <!-- Blurred Premium Output -->
+        <div class="relative">
+          <div id="premiumContent" class="blurred-paywall-content space-y-5">
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-700/80">
+              <div class="text-xs font-bold uppercase tracking-wider text-amber-300 mb-2">
+                1. High-Intrigue Bio / Rewrite Overhaul
+              </div>
+              <p id="premiumOverhaulText" class="text-sm sm:text-base text-slate-100 leading-relaxed whitespace-pre-line"></p>
+            </div>
+
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-emerald-300 mb-2.5">
+                2. 5 Plug-and-Play Replies That Spark Instant Curiosity
+              </div>
+              <div id="premiumRepliesList" class="space-y-3"></div>
+            </div>
+          </div>
+
+          <!-- Paywall Overlay CTA -->
+          <div id="paywallOverlay" class="absolute inset-0 flex items-center justify-center p-4">
+            <div class="max-w-md w-full rounded-2xl bg-slate-950/95 border border-amber-400/50 p-6 text-center shadow-2xl shadow-black/80">
+              <div class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-300 bg-amber-500/15 border border-amber-500/30 px-3 py-1 rounded-full mb-3">
+                ⚡ Instant Automatic Unlock
+              </div>
+              <h4 class="text-lg sm:text-xl font-extrabold text-white mb-2">
+                Stop Getting Left on Read Tonight
+              </h4>
+              <p class="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
+                Unlock your custom high-intrigue overhaul + all 5 plug-and-play replies tailored to your exact text, plus <strong class="text-white">unlimited lifetime audits</strong>.
+              </p>
+              <ul class="text-left text-xs text-slate-300 space-y-1.5 mb-5 max-w-xs mx-auto">
+                <li>✓ Full Bio &amp; Profile Curiosity Overhaul</li>
+                <li>✓ 5 Tailored Plug-and-Play Replies (Copy &amp; Send)</li>
+                <li>✓ Psychology Notes Explaining Why Each Works</li>
+                <li>✓ One-Time $19 Card Payment — No Subscription</li>
+              </ul>
+              <a
+                id="gumroadUnlockBtn"
+                href="https://gumroad.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-slate-950 font-extrabold text-sm sm:text-base transition cta-glow"
+              >
+                Unlock Everything Now — $19 (Lifetime)
+              </a>
+              <p class="text-[11px] text-slate-500 mt-3">
+                Secure Gumroad checkout • Automatically redirects &amp; unlocks your results immediately after payment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Why It Works Section -->
+    <section class="mt-14 grid sm:grid-cols-3 gap-4">
+      <div class="glass-panel rounded-xl p-5">
+        <div class="text-amber-400 font-bold text-sm mb-1.5">1. Kills “Job Interview” Mode</div>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          “How was your weekend?” feels like homework. We replace flat questions with playful assumptions she actually wants to correct or tease back.
+        </p>
+      </div>
+      <div class="glass-panel rounded-xl p-5">
+        <div class="text-emerald-400 font-bold text-sm mb-1.5">2. Creates an Effortless Curiosity Gap</div>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          Average guys beat 10/10 profiles every day when their bio or text sparks a micro-story instead of listing generic hobbies like travel and gym.
+        </p>
+      </div>
+      <div class="glass-panel rounded-xl p-5">
+        <div class="text-sky-400 font-bold text-sm mb-1.5">3. Built for Real Guys, Zero Cringe</div>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          100% respectful, witty, and grounded. No cheesy pickup lines — just clean emotional tension that makes replying feel fun.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <span>© <span id="yearNow"></span> SparkAudit. Built to give average guys an unfair texting edge.</span>
+      <span>100% SFW Psychology • Zero Stored Chats • API Available at <code class="text-slate-400">/api/analyze</code></span>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 mt-3 text-[11px] text-slate-500">
+      Ecosystem:
+      <a href="https://showlock-saas.vercel.app" target="_blank" rel="noopener" class="hover:text-amber-300">ShowLock AI</a> ·
+      <a href="https://closemore-ai-vault.vercel.app" target="_blank" rel="noopener" class="hover:text-amber-300">CloseMore AI</a> ·
+      <a href="https://baseguard-402.vercel.app" target="_blank" rel="noopener" class="hover:text-amber-300">BaseGuard-402</a> ·
+      <a href="https://alphapulse-402.vercel.app" target="_blank" rel="noopener" class="hover:text-amber-300">AlphaPulse-402</a> ·
+      <a href="https://cleanread-402.vercel.app" target="_blank" rel="noopener" class="hover:text-amber-300">CleanRead-402</a> ·
+      <a href="https://meerwave24.gumroad.com" target="_blank" rel="noopener" class="hover:text-amber-300">Digital Storefront</a>
+    </div>
+  </footer>
+
+  <script src="/config.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
